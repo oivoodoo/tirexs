@@ -3,7 +3,7 @@ defmodule Acceptances.HTTPTest do
 
   import Tirexs.HTTP
 
-  @uri_environment Application.get_env(:tirexs, :uri)
+  @uri_environment Tirexs.get_uri_env()
 
 
   setup do

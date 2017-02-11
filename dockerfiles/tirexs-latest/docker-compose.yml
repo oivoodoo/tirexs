@@ -1,0 +1,15 @@
+version: "2"
+
+services:
+  elasticsearch:
+    image: elasticsearch:latest
+    container_name: tirexs-latest-elasticsearch
+    ports: ["9200"]
+    networks:
+      - back-tier
+
+volumes:
+  db-data:
+
+networks:
+  back-tier:
